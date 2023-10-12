@@ -1,0 +1,18 @@
+.gradient {
+    background-image: linear-gradient(rgba(185,204,208,255), rgba(205,132,151,255));
+    background-repeat: no-repeat;
+}
+.table {
+    background-color: #05a835;
+    width: 300px;
+    max-width: 300px;
+    height: 300px;
+    max-height: 300px;
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+.card {
+    position: absolute;
+    width: 50px;
+}

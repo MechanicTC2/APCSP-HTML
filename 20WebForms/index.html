@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        #bg {
+            background-color: #dddddd;
+            width: 510px;
+            min-width: 510px;
+            border: 1px solid black;
+            font-family: Tahoma, sans-serif;
+            font-size: 14px;
+        }
+        .form {
+            margin: 5px 5px 5px 5px;
+            width: 500px;
+            min-width: 500px;
+            background-color: #dddddd;
+            position: relative;
+        }
+        .label {
+            text-align: right;
+            width: 100px;
+            float: left;
+            padding: 5px;
+            margin-right: 20px;
+        }
+        .tall {
+            height: 60px;
+            padding-top: 34px;
+        }
+        .input {
+            text-align: left;
+            padding: 5px;
+        }
+        .clear {
+            clear: both;
+        }
+
+    </style>
+    <title>Web Form</title>
+</head>
+<body>
+    <div id="bg">
+        <form method="post" action="index.html" class="form">
+            <fieldset>
+                <legend style="font-size: 20px;">Give Us Your Feedback</legend>
+                <div>
+                    <label class="label tall" name="name" style="position: relative; top:-20px;">Full Name:</label>
+                    <input type="text" class="input" name="name" style="width: 275px; position: relative; top: 10px;">
+                </div>
+
+                <div class="clear"></div>
+                <div style="position: relative; top: -40px;">
+                    <label class="label tall" name="year">Year:</label>
+                    <input type="radio" id="freshman" name="year" value="Freshman">
+                    <label for="freshman">Freshman</label>
+                    <br>
+                    <input type="radio" id="sophomore" name="year" value="Sophomore">
+                    <label for="sophomore">Sophomore</label>
+                    <br>
+                    <input type="radio" id="junior" name="year" value="Junior">
+                    <label for="junior">Junior</label>
+                    <br>
+                    <input type="radio" id="senior" name="year" value="Senior">
+                    <label for="senior">Senior</label>
+                </div>
+
+                <div class="clear"></div>
+                <div style="position: relative; top: -20px;">
+                    <label class="label tall" name="activities" style="position: relative; top: -5px;">Activities:</label>
+                    <input type="checkbox" id="sports" name="activities" value="Sports">
+                    <label for="sports">Sports</label>
+                    <br>
+                    <input type="checkbox" id="music" name="activities" value="Music">
+                    <label for="music">Music</label>
+                    <br>
+                    <input type="checkbox" id="theater" name="activities" value="Theater">
+                    <label for="theater">Theater</label>
+                    <br>
+                    <input type="checkbox" id="other" name="activities" value="Other">
+                    <label for="other">Other</label>
+                </div>
+
+                <div class="clear"></div>
+                <div>
+                    <label for="quarter" class="label tall" style="position: relative; top: -35px;">Quarter:</label>
+                    <select id="quarter" name="quarter" style="top: 35px">
+                        <option value="Spring">Spring</option>
+                        <option value="Summer">Summer</option>
+                        <option value="Fall" selected>Fall</option>
+                        <option value="Winter">Winter</option>
+                    </select>
+                </div>
+                
+                <div class="clear"></div>
+                <div style="position: relative; top: -50px;">
+                    <label for="comments" class="label tall">Comments:</label>
+                    <textarea name="comments" style="width: 300px; height: 80px;">Enter your feedback here.</textarea>      
+                </div>
+                
+                <div class="clear"></div>
+                <div style="position: relative; top: -30px; left: 160px;">
+                    <input type="submit" name="submit" value="Click Here to Submit">
+                </div>
+            </fieldset>
+        </form>
+        <p style="font-size: 4px;">⠀</p>
+    </div>
+</body>
+</html>
